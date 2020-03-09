@@ -7,7 +7,7 @@ console.log("Who-Am-I server starting...");
 console.log("Who-Am-I received following arguments:");
 console.log(process.argv);
 
-var port = 8888;
+var port = 9090;
 if (process.argv.length > 2) {
 	console.log("Setting port to " + process.argv[2]);
 	port = process.argv[2];
