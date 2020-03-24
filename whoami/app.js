@@ -13,7 +13,7 @@ if (process.argv.length > 2) {
 	port = process.argv[2];
 }
 else {
-	console.log("No port was configured. Setting to default port 8888.");
+	console.log("No port was configured. Setting to default port " + port);
 }
 
 var appName = "whoami-app";
