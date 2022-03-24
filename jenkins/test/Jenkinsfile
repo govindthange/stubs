@@ -1,0 +1,35 @@
+pipeline {
+    agent any
+    stages {
+        stage("clean") {
+            steps {
+                echo 'Cleaning the project workspace...'
+            }
+        }
+    }
+    stages {
+        stage("build") {
+            steps {
+                sh 'echo "Building the application..."'
+            }
+        }
+    }
+    stages {
+        stage("test") {
+            steps {
+                echo 'Testing...'
+            }
+        }
+    }
+    stages {
+        stage("deploy") {
+            steps {
+                echo 'Deploying application...'
+            }
+        }
+    }
+}
+
+node {
+    // groovy script comes here...
+}
